@@ -560,10 +560,43 @@ import "motion";
     import { inView } from "motion";
 
     // <-- inview kapitlerne -->
-    const kapitlerneFadeup = document.querySelector("#facts");
+    const factsFadeup = document.querySelector("#facts");
+
+    inView(factsFadeup, () => {
+      factsFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig",
+        "animate__slow"
+      );
+    });
+
+    // <-- inview kapitlerne -->
+    const kapitlerneFadeup = document.querySelector("#kapitlerne");
 
     inView(kapitlerneFadeup, () => {
       kapitlerneFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig",
+        "animate__slow"
+      );
+    });
+
+    // <-- inview kapitlerne -->
+    const anmeldelserFadeup = document.querySelector("#anmeldelser");
+
+    inView(anmeldelserFadeup, () => {
+      anmeldelserFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig",
+        "animate__slow"
+      );
+    });
+
+    // <-- inview kapitlerne -->
+    const forfatterenFadeup = document.querySelector("#forfatteren");
+
+    inView(forfatterenFadeup, () => {
+      forfatterenFadeup.classList.add(
         "animate__animated",
         "animate__fadeInUpBig",
         "animate__slow"
