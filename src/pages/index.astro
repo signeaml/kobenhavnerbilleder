@@ -55,9 +55,21 @@ import "motion";
   </section>
 
   <section id="billeder" class="md:grid grid-cols-3 gap-20 p-20 bg-orange-600">
-    <img class="py-4" src="/src/assets/images/bog_lukket.jpg" alt="" />
-    <img class="py-4" src="/src/assets/images/bog_open.jpg" alt="" />
-    <img class="py-4" src="/src/assets/images/bog_oppe.jpg" alt="" />
+    <img
+      class="py-4 hover:drop-shadow-xl"
+      src="/src/assets/images/bog_lukket.jpg"
+      alt=""
+    />
+    <img
+      class="py-4 hover:drop-shadow-xl"
+      src="/src/assets/images/bog_open.jpg"
+      alt=""
+    />
+    <img
+      class="py-4 hover:drop-shadow-xl"
+      src="/src/assets/images/bog_oppe.jpg"
+      alt=""
+    />
   </section>
 
   <section id="kapitlerne" class="p-20">
@@ -398,7 +410,9 @@ import "motion";
     <h2 class="text-2xl font-mono grid grid-cols-1 place-items-center pb-20">
       Galleri
     </h2>
-    <div class="grid grid-cols-2 md:grid md:grid-cols-4 size-400 gap-4">
+    <div
+      class="grid grid-cols-2 md:grid md:grid-cols-4 size-400 gap-4 hover:animate__animated hover:animate__zoomIn hover:animate__delay-1s"
+    >
       <img
         class="w-[400px] h-[300px] object-fit"
         src="/src/assets/images/b1.jpg"
